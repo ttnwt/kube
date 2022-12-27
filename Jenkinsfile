@@ -7,7 +7,7 @@ pipeline {
         
             stage('Checkout') {
                 steps {
-                    git branch: 'main', credentialsId: 'me', url: 'https://github.com/ttnwt/kube.git'
+                    git branch: 'main', credentialsId: 'kuber', url: 'https://github.com/ttnwt/kube.git'
                 }
             }
             stage ("Deploy") {
